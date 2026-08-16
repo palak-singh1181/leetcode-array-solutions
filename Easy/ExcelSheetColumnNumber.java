@@ -1,0 +1,27 @@
+public class ExcelSheetColumnNumber {
+
+    public static int titleToNumber(String columnTitle) {
+
+        int result = 0;
+
+        for (char ch : columnTitle.toCharArray()) {
+
+            int value = ch - 'A' + 1;
+
+            result = result * 26 + value;
+        }
+
+        return result;
+    }
+
+    public static void main(String[] args) {
+
+        String columnTitle1 = "A";
+        String columnTitle2 = "AB";
+        String columnTitle3 = "ZY";
+
+        System.out.println(titleToNumber(columnTitle1));
+        System.out.println(titleToNumber(columnTitle2));
+        System.out.println(titleToNumber(columnTitle3));
+    }
+}
