@@ -23,7 +23,6 @@ public class LC282_ExpressionAddOperators {
             String expression,
             List<String> result) {
 
-        // If all digits are used
         if (index == num.length()) {
 
             if (value == target) {
@@ -56,7 +55,7 @@ public class LC282_ExpressionAddOperators {
                         currentString,
                         result
                 );
-
+                
             } else {
 
                 // Addition
