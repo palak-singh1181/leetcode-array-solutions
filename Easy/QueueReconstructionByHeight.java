@@ -1,6 +1,4 @@
-
 import java.util.*;
-
 public class QueueReconstructionByHeight {
 
     static int[][] reconstructQueue(int[][] people) {
